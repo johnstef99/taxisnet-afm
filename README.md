@@ -1,7 +1,7 @@
 [![pub version](https://img.shields.io/pub/v/taxisnet_afm)](https://pub.dev/packages/taxisnet_afm)
 [![pub publisher](https://img.shields.io/pub/publisher/taxisnet_afm)](https://pub.dev/publishers/johnstef.com/packages)
 
-This package uses [Αναζήτηση Βασικών Στοιχείων Μητρώου Επιχειρήσεων](https://www.aade.gr/epiheiriseis/forologikes-ypiresies/mitroo/anazitisi-basikon-stoiheion-mitrooy-epiheiriseo])
+This package uses [Αναζήτηση Βασικών Στοιχείων Μητρώου Επιχειρήσεων](https://www.aade.gr/epiheiriseis/forologikes-ypiresies/mitroo/anazitisi-basikon-stoiheion-mitrooy-epiheiriseon)
 to request and parse the respone from TAXISnet API.
 
 ## Features
