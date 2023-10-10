@@ -7,8 +7,8 @@ environment:
   sdk: ^3.1.1
 
 dependencies:
-  http:
-  xml:
+  http: ">=1.0.0 <=2.0.0"
+  xml: ">=5.0.0 <=7.0.0"
 
 dev_dependencies:
   lints: ^2.0.0
