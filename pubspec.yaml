@@ -1,7 +1,7 @@
 name: taxisnet_amf
 description: Get AFM details from TAXISnet
 version: 1.0.0
-repository: https://github.com/johnstef99/taxisnet_amf
+repository: https://github.com/johnstef99/taxisnet-afm
 
 environment:
   sdk: ^3.1.1
