@@ -1,4 +1,4 @@
-import 'package:taxisnet_amf/taxisnet_amf.dart';
+import 'package:taxisnet_afm/taxisnet_afm.dart';
 
 const username = String.fromEnvironment('TAXISNET_USERNAME');
 const password = String.fromEnvironment('TAXISNET_PASSWORD');

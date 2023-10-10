@@ -1,7 +1,7 @@
 import 'dart:io';
 
 import 'package:http/http.dart' as http;
-import 'package:taxisnet_amf/src/models/taxis_net_afm_details_model.dart';
+import 'package:taxisnet_afm/src/models/taxis_net_afm_details_model.dart';
 import 'package:xml/xml.dart';
 
 class TaxisNetAFMClient {
