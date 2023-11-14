@@ -4,6 +4,15 @@ import 'package:http/http.dart' as http;
 import 'package:taxisnet_afm/src/models/taxis_net_afm_details_model.dart';
 import 'package:xml/xml.dart';
 
+class TaxisNetAFMException implements Exception {
+  final String message;
+
+  TaxisNetAFMException(this.message);
+
+  @override
+  String toString() => message;
+}
+
 class TaxisNetAFMClient {
   final String _username;
   final String _password;
@@ -37,7 +46,10 @@ class TaxisNetAFMClient {
     if (errors.isNotEmpty) {
       for (final error in errors) {
         final hasNullError = error.getAttribute('xsi:nil') == 'true';
-        if (!hasNullError) throw Exception(error.innerText);
+        if (!hasNullError) {
+          throw TaxisNetAFMException(
+              error.innerText.isEmpty ? 'Unknown error' : error.innerText);
+        }
       }
     }
 
