@@ -20,12 +20,12 @@ class TaxisNetAFMClient {
   final String _soapEndpoint =
       'https://www1.gsis.gr/wsaade/RgWsPublic2/RgWsPublic2';
 
-  final Map<String, String> _headers = {
+  final Map<String, String> _headers = const {
     HttpHeaders.contentTypeHeader: 'application/soap+xml;charset=utf-8',
     'SOAPAction': 'POST',
   };
 
-  TaxisNetAFMClient(this._username, this._password);
+  const TaxisNetAFMClient(this._username, this._password);
 
   Future<TaxisNetAFMDetails?> getAFMDetails(String afm) async {
     final response = await http
