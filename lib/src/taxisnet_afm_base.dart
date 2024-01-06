@@ -55,7 +55,9 @@ class TaxisNetAFMClient {
 
     final basicRecElements = document.findAllElements('basic_rec');
     if (basicRecElements.isEmpty) return null;
-    return TaxisNetAFMDetails.fromXmlElement(basicRecElements.first);
+    final primaryActivity = document.findAllElements('firm_act_descr').firstOrNull?.innerText;
+
+    return TaxisNetAFMDetails.fromXmlElement(basicRecElements.first, primaryActivity);
   }
 
   String _generateSoapXml(String afm) {

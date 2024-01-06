@@ -18,8 +18,12 @@ class TaxisNetAFMDetails {
   late String registDate;
   late String stopDate;
   late String normalVatSystemFlag;
+  late String? primaryActivity;
 
-  TaxisNetAFMDetails.fromXmlElement(XmlElement basicRecElement) {
+  TaxisNetAFMDetails.fromXmlElement(
+    XmlElement basicRecElement,
+    this.primaryActivity,
+  ) {
     afm = _getTextContent(basicRecElement, 'afm');
     doy = _getTextContent(basicRecElement, 'doy');
     doyDescr = _getTextContent(basicRecElement, 'doy_descr');
@@ -68,6 +72,7 @@ Postal Area Description: $postalAreaDescription
 Registration Date: $registDate
 Stop Date: $stopDate
 Normal VAT System Flag: $normalVatSystemFlag
+Primary Activity: $primaryActivity
 ''';
   }
 }
